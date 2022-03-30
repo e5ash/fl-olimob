@@ -1,10 +1,294 @@
 extends ../../templates/default
 block vars
-	-
-		title = "Главная страница"
-		breadcrumbs = [
-			['Главная', 'index.html'],
-			[title]
-		]
+  -
+    title = "Главная страница"
+    breadcrumbs = [
+      ['Главная', 'index.html'],
+      [title]
+    ]
 block content
-	
+  .intro
+    .case
+      .intro__content
+        .intro__title.h1 OLIMOB
+        .intro__subtitle Multi vertical affiliate program
+        .intro__text Unique platform with top offers to generate maximum profit.
+        .intro__btn.btn.--md.--bg-violet  Sign Up
+      .intro__award.award
+        .award__value 2017
+        .award__text 5+ years of successful traffic monetization
+      .intro__figures
+        .intro__figure
+        .intro__figure
+        .intro__figure
+
+  .offers
+    .case
+      .offers__title Offers & #[u Verticals]
+      .offers__list.row
+        .offers__item.offer
+          .offer__head
+            .offer__icon
+              img(src="" alt="")
+            .offer__title Dating
+          .offer__body
+            .offer__list
+              .offer__item
+                .offer__item-icon
+                  img(src="" alt="")
+                .offer__item-text GEO - World Wide
+              .offer__item
+                .offer__item-icon
+                  img(src="" alt="")
+                .offer__item-text 1000+ offers
+              .offer__item
+                .offer__item-icon
+                  img(src="" alt="")
+                .offer__item-text WW Smartlinks + Apps Android/iOS 
+
+        .offers__item.offer
+          .offer__head
+            .offer__icon
+              img(src="" alt="")
+            .offer__title Mobile Сontent
+          .offer__body
+            .offer__list
+              .offer__item
+                .offer__item-icon
+                  img(src="" alt="")
+                .offer__item-text In-house solution 
+              .offer__item
+                .offer__item-icon
+                  img(src="" alt="")
+                .offer__item-text Click & PIN submit flow
+              .offer__item
+                .offer__item-icon
+                  img(src="" alt="")
+                .offer__item-text ~100 GEOs
+
+        .offers__item.offer
+          .offer__head
+            .offer__icon
+              img(src="" alt="")
+            .offer__title Gambling
+          .offer__body
+            .offer__list
+              .offer__item
+                .offer__item-icon
+                  img(src="" alt="")
+                .offer__item-text High ROI on top traffic sources
+              .offer__item
+                .offer__item-icon
+                  img(src="" alt="")
+                .offer__item-text Webview
+              .offer__item
+                .offer__item-icon
+                  img(src="" alt="")
+                .offer__item-text NET7 Payment Terms
+
+        .offers__item.offer
+          .offer__head
+            .offer__icon
+              img(src="" alt="")
+            .offer__title Crypto
+          .offer__body
+            .offer__list
+              .offer__item
+                .offer__item-icon
+                  img(src="" alt="")
+                .offer__item-text GEO - WW
+              .offer__item
+                .offer__item-icon
+                  img(src="" alt="")
+                .offer__item-text High payouts
+              .offer__item
+                .offer__item-icon
+                  img(src="" alt="")
+                .offer__item-text Funnels and promo materials available
+
+    .offers__figures
+      .offers__figure
+      .offers__figure
+
+  .alert
+    .case
+      .alert__wrap.row
+        .alert__title Join Olimob and monetize your traffic
+        a.alert__btn.btn.--md.--bg-white(href="") Sign Up
+
+  .platform
+    .case
+      .platform__list
+        .platform__item
+          .platform__text
+            .platform__title Care & <br>#[u Support]
+            .platform__desc Optimize your work with us.
+          .platform__elems
+            .platform__elem
+              .platform__elem-icon
+                img(src="" alt="")
+              .platform__elem-text Direct integration with traffic <br>sources for campaign optimization
+            .platform__elem
+              .platform__elem-icon
+                img(src="" alt="")
+              .platform__elem-text 24/7 support
+            .platform__elem
+              .platform__elem-icon
+                img(src="" alt="")
+              .platform__elem-text In-house app development
+            .platform__elem
+              .platform__elem-icon
+                img(src="" alt="")
+              .platform__elem-text Use our experience and solutions to <br>increase lifetime and spends on ads accounts
+
+
+        .platform__item
+          .platform__text
+            .platform__title Profitable <br>#[u Terms]
+            .platform__desc Terms
+          .platform__elems
+            .platform__elem
+              .platform__elem-icon
+                img(src="" alt="")
+              .platform__elem-text Exclusive offers
+            .platform__elem
+              .platform__elem-icon
+                img(src="" alt="")
+              .platform__elem-text Integration and launch support
+            .platform__elem
+              .platform__elem-icon
+                img(src="" alt="")
+              .platform__elem-text Detailed Smartlink Reports
+
+        .platform__item
+          .platform__text
+            .platform__title Smart #[u Platform]
+            .platform__desc Unique advertising solutions and technologies developed to greately increase your profit.
+          .platform__elems
+            .platform__elem
+              .platform__elem-icon
+                img(src="" alt="")
+              .platform__elem-text Custom settings for each user
+            .platform__elem
+              .platform__elem-icon
+                img(src="" alt="")
+              .platform__elem-text Instant approval
+            .platform__elem
+              .platform__elem-icon
+                img(src="" alt="")
+              .platform__elem-text Worldwide Coverage
+            .platform__elem
+              .platform__elem-icon
+                img(src="" alt="")
+              .platform__elem-text We accept all traffic sources
+
+
+    .platform__figures
+      .platform__figure
+      .platform__figure
+      .platform__figure
+  
+    .platform__get.pget
+      .pget__wrap
+        .pget__title #[u Sign up] and #[u get]:
+        .pget__text
+          ul
+            li Premium Payouts
+            li Qualified Support
+            li Fast Payments
+        a.pget__btn.btn.--md.--bg-violet(href="") Sign Up
+      .pget__figures
+        .pget__figure
+        .pget__figure
+
+  .alert
+    .case
+      .alert__wrap.row
+        .alert__title We are happy to share our experience, knowledge and best practices for your profit
+
+  .partners
+    .case
+      .partners__title Our #[u Partners]
+      .partners__list.row
+        mixin partner(img)
+          .partners__item
+            img(src=img alt="")
+        +partner('')
+        +partner('')
+        +partner('')
+        +partner('')
+        +partner('')
+        +partner('')
+        +partner('')
+        +partner('')
+        +partner('')
+        +partner('')
+        +partner('')
+        +partner('')
+      .partners__figures
+        .partners__figure
+
+  .feedback
+    .case
+      .contacts
+        .contacts__wrap
+          .contacts__title Contacts
+          .contacts__list
+            mixin contactItem(icon, title, value)
+              .contacts__item
+                .contacts__icon
+                  img(src=icon alt="")
+                .contacts__text
+                  .contacts__title= title
+                  .contacts__value!= value
+            +contactItem('', 'Email', '<a href="mailto:info@olimob.com">info@olimob.com</a>')
+            +contactItem('', 'LinkedIn', '<a href="#">Olimob-cpa</a>')
+            +contactItem('', 'Telegram Support', '<a href="#">@olimobsupport</a>')
+            +contactItem('', 'Skype', '<a href="#">Olimob</a>')
+        
+      .team
+        .team__wrap
+          .team__title Our Managers
+          .team__list.row
+            .team__item
+              .team__img
+                img(src="" alt="")
+              .team__data
+                .team__name Eugene
+                .team__desc Gambling
+                .team__contact
+                  p @EvginSpb
+                  p Skype
+            .team__item
+              .team__img
+                img(src="" alt="")
+              .team__data
+                .team__name Alice
+                .team__desc Dating
+                .team__contact
+                  p @alisa_litvinko
+                  p Skype
+            .team__item
+              .team__img
+                img(src="" alt="")
+              .team__data
+                .team__name Artem
+                .team__desc Crypto
+                .team__contact
+                  p @artem_olimob
+                  p Skype
+            .team__item
+              .team__img
+                img(src="" alt="")
+              .team__data
+                .team__name Tim
+                .team__desc Mobile content
+                .team__contact
+                  p @PubOlimob
+                  p Skype
+
+  .alert
+    .case
+      .alert__wrap.row
+        .alert__title Sign up and dedicated manager will reach you directly 
+        a.alert__btn.btn.--md.--bg-white(href="") Sign Up
