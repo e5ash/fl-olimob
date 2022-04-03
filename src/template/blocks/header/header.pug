@@ -2,19 +2,26 @@ include ../../pug/vars
 
 header.header
   .case
+    .header__inner
+      a.header__logo(href="index.html")
+        img(src="uploads/logo.svg" alt="")
+      .header__ham
+        span
+        span
+        span
     .header__wrap.row
-      a.header__logo(href="")
-        img(src="" alt="")
+      a.header__logo(href="index.html")
+        img(src="uploads/logo.svg" alt="")
       .header__nav
         ul
           li
-            a(href="") About us
+            a(href="index.html#intro") About us
           li
-            a(href="") Offers & Verticals
+            a(href="index.html#offers") Offers & Verticals
           li
-            a(href="") Advertisers
+            a(href="advertiser.html") Advertisers
           li
-            a(href="") Contacts
+            a(href="index.html#contacts") Contacts
       .header__btns.row
         a.header__btn.btn.--bg-violet.--sm(href="") Sign Up
         a.header__btn.btn.--bg-white.--sm(href="") Sign In

@@ -1,294 +1,322 @@
 extends ../../templates/default
 block vars
   -
-    title = "Главная страница"
+    title = "OLIMOB"
     breadcrumbs = [
       ['Главная', 'index.html'],
       [title]
     ]
 block content
-  .intro
+  .intro#intro
     .case
-      .intro__content
-        .intro__title.h1 OLIMOB
-        .intro__subtitle Multi vertical affiliate program
-        .intro__text Unique platform with top offers to generate maximum profit.
-        .intro__btn.btn.--md.--bg-violet  Sign Up
-      .intro__award.award
-        .award__value 2017
-        .award__text 5+ years of successful traffic monetization
-      .intro__figures
-        .intro__figure
-        .intro__figure
-        .intro__figure
+      .intro__wrap
+        .intro__content
+          .intro__title.h1 #[u OLIMOB]
+          .intro__subtitle Multi vertical affiliate program
+          .intro__text Unique platform with top offers to generate maximum profit.
+          .intro__btn.btn.--md.--bg-violet  Sign Up
+    .intro__award.award
+      .award__value 2017
+      .award__text 5+ years of successful traffic monetization
+      .award__bg
+        <svg width="268" height="300" viewBox="0 0 268 300" fill="none" xmlns="http://www.w3.org/2000/svg"> <g filter="url(#filter0_d_816_1220)"> <path d="M144.852 286.679C138.433 290.385 130.525 290.385 124.106 286.679L21.3302 227.342C14.9112 223.636 10.957 216.787 10.957 209.375L10.957 90.6999C10.957 83.288 14.9113 76.4391 21.3302 72.7331L124.106 13.3957C130.525 9.68972 138.433 9.68972 144.852 13.3957L247.627 72.7331C254.046 76.4391 258.001 83.288 258.001 90.7L258.001 209.375C258.001 216.787 254.046 223.636 247.627 227.342L144.852 286.679Z" fill="white"/> <path d="M144.102 285.38C138.147 288.818 130.81 288.818 124.856 285.38L22.0802 226.043C16.1253 222.605 12.457 216.251 12.457 209.375L12.457 90.6999C12.457 83.8239 16.1254 77.4702 22.0802 74.0322L124.856 14.6947C130.811 11.2567 138.147 11.2567 144.102 14.6947L246.877 74.0322C252.832 77.4702 256.501 83.8239 256.501 90.7L256.501 209.375C256.501 216.251 252.832 222.605 246.877 226.043L144.102 285.38Z" stroke="#5814C7" stroke-width="3" stroke-linecap="square" stroke-linejoin="round"/> </g> <g style="mix-blend-mode:hard-light" filter="url(#filter1_f_816_1220)"> <path d="M144.407 285.219C138.29 288.75 130.753 288.75 124.636 285.219L21.8606 225.881C15.7434 222.349 11.975 215.822 11.975 208.759L11.975 90.0837C11.975 83.0201 15.7434 76.4931 21.8607 72.9613L124.636 13.6238C130.753 10.0921 138.29 10.0921 144.407 13.6238L247.183 72.9613C253.3 76.4931 257.069 83.0201 257.069 90.0837L257.069 208.759C257.069 215.822 253.3 222.349 247.183 225.881L144.407 285.219Z" stroke="#AB6AFD" stroke-width="1.95" stroke-linecap="square" stroke-linejoin="round"/> </g> <g style="mix-blend-mode:hard-light" filter="url(#filter2_f_816_1220)"> <path d="M144.257 284.959C138.233 288.437 130.811 288.437 124.786 284.959L22.0106 225.621C15.9862 222.143 12.275 215.715 12.275 208.759L12.275 90.0837C12.275 83.1273 15.9862 76.6993 22.0107 73.2211L124.786 13.8837C130.811 10.4054 138.233 10.4054 144.257 13.8837L247.033 73.2211C253.057 76.6993 256.769 83.1273 256.769 90.0837L256.769 208.759C256.769 215.715 253.057 222.143 247.033 225.621L144.257 284.959Z" stroke="#834DDB" stroke-width="2.55" stroke-linecap="square" stroke-linejoin="round"/> </g> <g style="mix-blend-mode:hard-light" filter="url(#filter3_ddi_816_1220)"> <path d="M144.407 285.219C138.29 288.75 130.753 288.75 124.636 285.219L21.8606 225.881C15.7434 222.349 11.975 215.822 11.975 208.759L11.975 90.0837C11.975 83.0201 15.7434 76.4931 21.8607 72.9613L124.636 13.6238C130.753 10.0921 138.29 10.0921 144.407 13.6238L247.183 72.9613C253.3 76.4931 257.069 83.0201 257.069 90.0837L257.069 208.759C257.069 215.822 253.3 222.349 247.183 225.881L144.407 285.219Z" stroke="#8F37FF" stroke-opacity="0.2" stroke-width="1.95" stroke-linecap="square" stroke-linejoin="round"/> </g> <g filter="url(#filter4_f_816_1220)"> <path d="M144.595 285.543C138.362 289.142 130.682 289.142 124.449 285.543L21.6731 226.206C15.4398 222.607 11.6 215.956 11.6 208.759L11.6 90.0837C11.6 82.8861 15.4399 76.2353 21.6732 72.6365L124.449 13.2991C130.682 9.7003 138.362 9.7003 144.595 13.2991L247.37 72.6366C253.604 76.2353 257.444 82.8862 257.444 90.0837L257.444 208.759C257.444 215.956 253.604 222.607 247.37 226.206L144.595 285.543Z" stroke="#AB6AFD" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/> </g> <g filter="url(#filter5_f_816_1220)"> <path d="M144.745 285.803C138.419 289.456 130.625 289.456 124.299 285.803L21.5231 226.466C15.197 222.813 11.3 216.063 11.3 208.759L11.3 90.0837C11.3 82.779 15.1971 76.0291 21.5232 72.3767L124.299 13.0393C130.625 9.38691 138.419 9.38691 144.745 13.0393L247.52 72.3767C253.847 76.0291 257.744 82.779 257.744 90.0837L257.744 208.759C257.744 216.063 253.847 222.813 247.52 226.466L144.745 285.803Z" stroke="white" stroke-width="0.6" stroke-linecap="square" stroke-linejoin="round"/> </g> <defs> <filter id="filter0_d_816_1220" x="0.957031" y="0.616211" width="267.043" height="298.842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/> <feOffset/> <feGaussianBlur stdDeviation="5"/> <feComposite in2="hardAlpha" operator="out"/> <feColorMatrix type="matrix" values="0 0 0 0 0.29629 0 0 0 0 0.141267 0 0 0 0 0.429167 0 0 0 1 0"/> <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_816_1220"/> <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_816_1220" result="shape"/> </filter> <filter id="filter1_f_816_1220" x="2" y="1" width="265.043" height="296.842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/> <feGaussianBlur stdDeviation="4.5" result="effect1_foregroundBlur_816_1220"/> </filter> <filter id="filter2_f_816_1220" x="8" y="7" width="253.043" height="284.842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/> <feGaussianBlur stdDeviation="1.5" result="effect1_foregroundBlur_816_1220"/> </filter> <filter id="filter3_ddi_816_1220" x="7.1" y="9.1" width="254.843" height="286.642" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/> <feOffset dy="1.95"/> <feGaussianBlur stdDeviation="0.75"/> <feColorMatrix type="matrix" values="0 0 0 0 0.0960001 0 0 0 0 0 0 0 0 0 0.3 0 0 0 0.7 0"/> <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow_816_1220"/> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/> <feOffset dy="3"/> <feGaussianBlur stdDeviation="1.95"/> <feColorMatrix type="matrix" values="0 0 0 0 0.670588 0 0 0 0 0.415686 0 0 0 0 0.992157 0 0 0 1 0"/> <feBlend mode="color-dodge" in2="effect1_dropShadow_816_1220" result="effect2_dropShadow_816_1220"/> <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_816_1220" result="shape"/> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/> <feOffset dx="-0.195" dy="0.39"/> <feGaussianBlur stdDeviation="0.0975"/> <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/> <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"/> <feBlend mode="normal" in2="shape" result="effect3_innerShadow_816_1220"/> </filter> <filter id="filter4_f_816_1220" x="10.7" y="9.7" width="247.643" height="279.442" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/> <feGaussianBlur stdDeviation="0.15" result="effect1_foregroundBlur_816_1220"/> </filter> <filter id="filter5_f_816_1220" x="10.8" y="9.8" width="247.443" height="279.242" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/> <feGaussianBlur stdDeviation="0.1" result="effect1_foregroundBlur_816_1220"/> </filter> </defs> </svg>
+    .intro__figures
+      .intro__figure.figure
+        img(src="uploads/intro-figure-1.png" alt="")
+      .intro__figure.figure
+        img(src="uploads/intro-figure-2.png" alt="")
+      .intro__figure.figure
+        img(src="uploads/intro-figure-3.png" alt="")
+      .intro__figure.figure
+        img(src="uploads/intro-figure-4.png" alt="")
+ 
 
-  .offers
+
+  .offers.bg-gray#offers
     .case
-      .offers__title Offers & #[u Verticals]
+      .offers__title.h2 Offers & #[u Verticals]
       .offers__list.row
         .offers__item.offer
           .offer__head
             .offer__icon
-              img(src="" alt="")
-            .offer__title Dating
+              img(src="uploads/dating.svg" alt="")
+              <svg width="66" height="75" viewBox="0 0 66 75" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M33.0053 0C31.9563 0 30.918 0.267208 29.9856 0.812313L3.01975 16.5242C1.15492 17.6037 0 19.6238 0 21.8042V53.2065C0 55.3869 1.15492 57.3963 3.01975 58.4865L29.9856 74.1877C30.918 74.7328 31.9669 75 33.0053 75C34.0543 75 35.0926 74.7328 36.025 74.1877L62.9803 58.4865C64.8557 57.3963 66 55.3869 66 53.2065V21.8042C66 19.6238 64.8451 17.6144 62.9803 16.5242L36.025 0.812313C35.0926 0.267208 34.0543 0 33.0053 0Z" fill="#964DDF"/> </svg>
+            .offer__title.h3
+              span Dating
           .offer__body
             .offer__list
               .offer__item
                 .offer__item-icon
-                  img(src="" alt="")
+                  img(src="uploads/fire.svg" alt="")
                 .offer__item-text GEO - World Wide
               .offer__item
                 .offer__item-icon
-                  img(src="" alt="")
+                  img(src="uploads/cog.svg" alt="")
                 .offer__item-text 1000+ offers
               .offer__item
                 .offer__item-icon
-                  img(src="" alt="")
+                  img(src="uploads/chart.svg" alt="")
                 .offer__item-text WW Smartlinks + Apps Android/iOS 
 
         .offers__item.offer
           .offer__head
             .offer__icon
-              img(src="" alt="")
-            .offer__title Mobile Сontent
+              img(src="uploads/vas.svg" alt="")
+              <svg width="66" height="75" viewBox="0 0 66 75" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M33.0053 0C31.9563 0 30.918 0.267208 29.9856 0.812313L3.01975 16.5242C1.15492 17.6037 0 19.6238 0 21.8042V53.2065C0 55.3869 1.15492 57.3963 3.01975 58.4865L29.9856 74.1877C30.918 74.7328 31.9669 75 33.0053 75C34.0543 75 35.0926 74.7328 36.025 74.1877L62.9803 58.4865C64.8557 57.3963 66 55.3869 66 53.2065V21.8042C66 19.6238 64.8451 17.6144 62.9803 16.5242L36.025 0.812313C35.0926 0.267208 34.0543 0 33.0053 0Z" fill="#964DDF"/> </svg>
+            .offer__title.h3 
+              span Mobile Сontent
           .offer__body
             .offer__list
               .offer__item
                 .offer__item-icon
-                  img(src="" alt="")
+                  img(src="uploads/home.svg" alt="")
                 .offer__item-text In-house solution 
               .offer__item
                 .offer__item-icon
-                  img(src="" alt="")
+                  img(src="uploads/click.svg" alt="")
                 .offer__item-text Click & PIN submit flow
               .offer__item
                 .offer__item-icon
-                  img(src="" alt="")
+                  img(src="uploads/earth.svg" alt="")
                 .offer__item-text ~100 GEOs
 
         .offers__item.offer
           .offer__head
             .offer__icon
-              img(src="" alt="")
-            .offer__title Gambling
+              img(src="uploads/gambling.svg" alt="")
+              <svg width="66" height="75" viewBox="0 0 66 75" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M33.0053 0C31.9563 0 30.918 0.267208 29.9856 0.812313L3.01975 16.5242C1.15492 17.6037 0 19.6238 0 21.8042V53.2065C0 55.3869 1.15492 57.3963 3.01975 58.4865L29.9856 74.1877C30.918 74.7328 31.9669 75 33.0053 75C34.0543 75 35.0926 74.7328 36.025 74.1877L62.9803 58.4865C64.8557 57.3963 66 55.3869 66 53.2065V21.8042C66 19.6238 64.8451 17.6144 62.9803 16.5242L36.025 0.812313C35.0926 0.267208 34.0543 0 33.0053 0Z" fill="#964DDF"/> </svg>
+            .offer__title.h3
+              span Gambling
           .offer__body
             .offer__list
               .offer__item
                 .offer__item-icon
-                  img(src="" alt="")
+                  img(src="uploads/thumb-up.svg" alt="")
                 .offer__item-text High ROI on top traffic sources
               .offer__item
                 .offer__item-icon
-                  img(src="" alt="")
+                  img(src="uploads/chat-alt.svg" alt="")
                 .offer__item-text Webview
               .offer__item
                 .offer__item-icon
-                  img(src="" alt="")
+                  img(src="uploads/earth.svg" alt="")
                 .offer__item-text NET7 Payment Terms
 
         .offers__item.offer
           .offer__head
             .offer__icon
-              img(src="" alt="")
-            .offer__title Crypto
+              img(src="uploads/crypto.svg" alt="")
+              <svg width="66" height="75" viewBox="0 0 66 75" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M33.0053 0C31.9563 0 30.918 0.267208 29.9856 0.812313L3.01975 16.5242C1.15492 17.6037 0 19.6238 0 21.8042V53.2065C0 55.3869 1.15492 57.3963 3.01975 58.4865L29.9856 74.1877C30.918 74.7328 31.9669 75 33.0053 75C34.0543 75 35.0926 74.7328 36.025 74.1877L62.9803 58.4865C64.8557 57.3963 66 55.3869 66 53.2065V21.8042C66 19.6238 64.8451 17.6144 62.9803 16.5242L36.025 0.812313C35.0926 0.267208 34.0543 0 33.0053 0Z" fill="#964DDF"/> </svg>
+            .offer__title.h3
+              span Crypto
           .offer__body
             .offer__list
               .offer__item
                 .offer__item-icon
-                  img(src="" alt="")
+                  img(src="uploads/fire.svg" alt="")
                 .offer__item-text GEO - WW
               .offer__item
                 .offer__item-icon
-                  img(src="" alt="")
+                  img(src="uploads/trending-up.svg" alt="")
                 .offer__item-text High payouts
               .offer__item
                 .offer__item-icon
-                  img(src="" alt="")
+                  img(src="uploads/speakerphone.svg" alt="")
                 .offer__item-text Funnels and promo materials available
 
     .offers__figures
-      .offers__figure
-      .offers__figure
-
+      .offers__figure.figure
+        img(src="uploads/offers-figure-1.png" alt="")
+      .offers__figure.figure
+        img(src="uploads/offers-figure-2.png" alt="")
   .alert
     .case
       .alert__wrap.row
-        .alert__title Join Olimob and monetize your traffic
+        .alert__title.h3 Join Olimob and monetize your traffic
         a.alert__btn.btn.--md.--bg-white(href="") Sign Up
 
-  .platform
+  .platform.bg-dynamic
     .case
       .platform__list
         .platform__item
           .platform__text
-            .platform__title Care & <br>#[u Support]
-            .platform__desc Optimize your work with us.
+            .platform__content
+              .platform__title.h2 Care & <br>#[u Support]
+              .platform__desc Optimize your work with us.
           .platform__elems
-            .platform__elem
-              .platform__elem-icon
-                img(src="" alt="")
-              .platform__elem-text Direct integration with traffic <br>sources for campaign optimization
-            .platform__elem
-              .platform__elem-icon
-                img(src="" alt="")
-              .platform__elem-text 24/7 support
-            .platform__elem
-              .platform__elem-icon
-                img(src="" alt="")
-              .platform__elem-text In-house app development
-            .platform__elem
-              .platform__elem-icon
-                img(src="" alt="")
-              .platform__elem-text Use our experience and solutions to <br>increase lifetime and spends on ads accounts
+            .platform__elems-list
+              .platform__elem
+                .platform__elem-icon
+                  img(src="uploads/chat-alt-2-violet.svg" alt="")
+                .platform__elem-text Direct integration with traffic <br>sources for campaign optimization
+              .platform__elem
+                .platform__elem-icon
+                  img(src="uploads/24h-violet.svg" alt="")
+                .platform__elem-text 24/7 support
+              .platform__elem
+                .platform__elem-icon
+                  img(src="uploads/cog-violet.svg" alt="")
+                .platform__elem-text In-house app development
+              .platform__elem
+                .platform__elem-icon
+                  img(src="uploads/thumb-up-violet.svg" alt="")
+                .platform__elem-text Use our experience and solutions to <br>increase lifetime and spends on ads accounts
 
 
         .platform__item
           .platform__text
-            .platform__title Profitable <br>#[u Terms]
-            .platform__desc Terms
+            .platform__content
+              .platform__title.h2 Profitable <br>#[u Terms]
+              .platform__desc Earn more with our referral program.
           .platform__elems
-            .platform__elem
-              .platform__elem-icon
-                img(src="" alt="")
-              .platform__elem-text Exclusive offers
-            .platform__elem
-              .platform__elem-icon
-                img(src="" alt="")
-              .platform__elem-text Integration and launch support
-            .platform__elem
-              .platform__elem-icon
-                img(src="" alt="")
-              .platform__elem-text Detailed Smartlink Reports
+            .platform__elems-list
+              .platform__elem
+                .platform__elem-icon
+                  img(src="uploads/trending-up-violet.svg" alt="")
+                .platform__elem-text Exclusive offers
+              .platform__elem
+                .platform__elem-icon
+                  img(src="uploads/shield-check-violet.svg" alt="")
+                .platform__elem-text Integration and launch support
+              .platform__elem
+                .platform__elem-icon
+                  img(src="uploads/view-grid-add-violet.svg" alt="")
+                .platform__elem-text Detailed Smartlink Reports
 
         .platform__item
           .platform__text
-            .platform__title Smart #[u Platform]
-            .platform__desc Unique advertising solutions and technologies developed to greately increase your profit.
+            .platform__content
+              .platform__title.h2 Smart <br>#[u Platform]
+              .platform__desc Unique advertising solutions and technologies developed to greately increase your profit.
           .platform__elems
-            .platform__elem
-              .platform__elem-icon
-                img(src="" alt="")
-              .platform__elem-text Custom settings for each user
-            .platform__elem
-              .platform__elem-icon
-                img(src="" alt="")
-              .platform__elem-text Instant approval
-            .platform__elem
-              .platform__elem-icon
-                img(src="" alt="")
-              .platform__elem-text Worldwide Coverage
-            .platform__elem
-              .platform__elem-icon
-                img(src="" alt="")
-              .platform__elem-text We accept all traffic sources
+            .platform__elems-list
+              .platform__elem
+                .platform__elem-icon
+                  img(src="uploads/link-violet.svg" alt="")
+                .platform__elem-text Custom settings for each user
+              .platform__elem
+                .platform__elem-icon
+                  img(src="uploads/fire-violet.svg" alt="")
+                .platform__elem-text Instant approval
+              .platform__elem
+                .platform__elem-icon
+                  img(src="uploads/earth-violet.svg" alt="")
+                .platform__elem-text Worldwide Coverage
+              .platform__elem
+                .platform__elem-icon
+                  img(src="uploads/switch-horizontal-violet.svg" alt="")
+                .platform__elem-text We accept all traffic sources
 
-
-    .platform__figures
-      .platform__figure
-      .platform__figure
-      .platform__figure
   
     .platform__get.pget
-      .pget__wrap
-        .pget__title #[u Sign up] and #[u get]:
-        .pget__text
-          ul
-            li Premium Payouts
-            li Qualified Support
-            li Fast Payments
-        a.pget__btn.btn.--md.--bg-violet(href="") Sign Up
+      .case
+        .pget__wrap
+          .pget__content
+            .pget__title.h2 #[u Sign up] and #[u get]:
+            .pget__text
+              ul
+                li Premium Payouts
+                li Qualified Support
+                li Fast Payments
+            a.pget__btn.btn.--md.--bg-violet(href="") Sign Up
       .pget__figures
-        .pget__figure
-        .pget__figure
+        .pget__figure.figure
+          img(src="uploads/pget-figure-1.png" alt="")
+        .pget__figure.figure
+          img(src="uploads/pget-figure-2.png" alt="")
 
   .alert
     .case
       .alert__wrap.row
-        .alert__title We are happy to share our experience, knowledge and best practices for your profit
+        .alert__title.h3 We are happy to share our experience, knowledge and best practices for your profit
 
-  .partners
+  .partners.bg-black
     .case
-      .partners__title Our #[u Partners]
-      .partners__list.row
-        mixin partner(img)
-          .partners__item
-            img(src=img alt="")
-        +partner('')
-        +partner('')
-        +partner('')
-        +partner('')
-        +partner('')
-        +partner('')
-        +partner('')
-        +partner('')
-        +partner('')
-        +partner('')
-        +partner('')
-        +partner('')
-      .partners__figures
-        .partners__figure
+      .partners__title.h2 Our #[u Partners]
+      .partners__wrap
+        .partners__list.row
+          mixin partner(img, height)
+            .partners__item
+              img(src='uploads/' + img alt="" height=height ? height + 'px' : null)
+          +partner('zombas-media.png', 34)
+          +partner('gologin.png', 20)
+          +partner('partnerkin.png', 34)
+          +partner('octo-tracker.png')
+          +partner('protraffic.png')
+          +partner('adspower.png', 25)
+          +partner('peerclick.png')
+          +partner('dolphin.png')
+          +partner('keitaro.png')
+          +partner('binom.png', 38)
+          +partner('voluum.png')
+        .partners__figures
+          .partners__figure.figure
+            img(src="uploads/partners-figure.png" alt="")
 
-  .feedback
+  .feedback#contacts
     .case
-      .contacts
-        .contacts__wrap
-          .contacts__title Contacts
-          .contacts__list
-            mixin contactItem(icon, title, value)
-              .contacts__item
-                .contacts__icon
-                  img(src=icon alt="")
-                .contacts__text
-                  .contacts__title= title
-                  .contacts__value!= value
-            +contactItem('', 'Email', '<a href="mailto:info@olimob.com">info@olimob.com</a>')
-            +contactItem('', 'LinkedIn', '<a href="#">Olimob-cpa</a>')
-            +contactItem('', 'Telegram Support', '<a href="#">@olimobsupport</a>')
-            +contactItem('', 'Skype', '<a href="#">Olimob</a>')
-        
-      .team
-        .team__wrap
-          .team__title Our Managers
-          .team__list.row
-            .team__item
-              .team__img
-                img(src="" alt="")
-              .team__data
-                .team__name Eugene
-                .team__desc Gambling
-                .team__contact
-                  p @EvginSpb
-                  p Skype
-            .team__item
-              .team__img
-                img(src="" alt="")
-              .team__data
-                .team__name Alice
-                .team__desc Dating
-                .team__contact
-                  p @alisa_litvinko
-                  p Skype
-            .team__item
-              .team__img
-                img(src="" alt="")
-              .team__data
-                .team__name Artem
-                .team__desc Crypto
-                .team__contact
-                  p @artem_olimob
-                  p Skype
-            .team__item
-              .team__img
-                img(src="" alt="")
-              .team__data
-                .team__name Tim
-                .team__desc Mobile content
-                .team__contact
-                  p @PubOlimob
-                  p Skype
+      .feedback__wrap.row
+        .contacts
+          .contacts__wrap
+            .contacts__title.h2 Contacts
+            .contacts__list
+              mixin contactItem(icon, title, value)
+                .contacts__item
+                  .contacts__icon
+                    u!= icon
+                    i
+                      <svg width="52" height="59" viewBox="0 0 66 75" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M33.0053 0C31.9563 0 30.918 0.267208 29.9856 0.812313L3.01975 16.5242C1.15492 17.6037 0 19.6238 0 21.8042V53.2065C0 55.3869 1.15492 57.3963 3.01975 58.4865L29.9856 74.1877C30.918 74.7328 31.9669 75 33.0053 75C34.0543 75 35.0926 74.7328 36.025 74.1877L62.9803 58.4865C64.8557 57.3963 66 55.3869 66 53.2065V21.8042C66 19.6238 64.8451 17.6144 62.9803 16.5242L36.025 0.812313C35.0926 0.267208 34.0543 0 33.0053 0Z" fill="#964DDF"/> </svg>
+                  .contacts__text
+                    .contacts__name= title
+                    .contacts__value!= value
+              +contactItem('<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.404391 3.06007L10.0003 7.85804L19.5964 3.06001C19.524 1.79959 18.4789 0.799805 17.2004 0.799805H2.80039C1.52181 0.799805 0.476752 1.79962 0.404391 3.06007Z" fill="white"/> <path d="M19.6004 5.74129L10.0003 10.5413L0.400391 5.74135V12.7998C0.400391 14.1253 1.47491 15.1998 2.80039 15.1998H17.2004C18.5259 15.1998 19.6004 14.1253 19.6004 12.7998V5.74129Z" fill="white"/> </svg>', 'Email', '<a href="mailto:info@olimob.com">info@olimob.com</a>')
+              +contactItem('<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M2.75 0.375C1.57639 0.375 0.625 1.32639 0.625 2.5C0.625 3.6736 1.57639 4.625 2.75 4.625C3.9236 4.625 4.875 3.6736 4.875 2.5C4.875 1.32639 3.9236 0.375 2.75 0.375Z" fill="white"/> <path d="M0.75 6.375C0.680964 6.375 0.625 6.43096 0.625 6.5V19.5C0.625 19.569 0.680964 19.625 0.75 19.625H4.75C4.81904 19.625 4.875 19.569 4.875 19.5V6.5C4.875 6.43096 4.81904 6.375 4.75 6.375H0.75Z" fill="white"/> <path d="M7.25 6.375C7.18096 6.375 7.125 6.43096 7.125 6.5V19.5C7.125 19.569 7.18096 19.625 7.25 19.625H11.25C11.319 19.625 11.375 19.569 11.375 19.5V12.5C11.375 12.0027 11.5725 11.5258 11.9242 11.1742C12.2758 10.8225 12.7527 10.625 13.25 10.625C13.7473 10.625 14.2242 10.8225 14.5758 11.1742C14.9275 11.5258 15.125 12.0027 15.125 12.5V19.5C15.125 19.569 15.181 19.625 15.25 19.625H19.25C19.319 19.625 19.375 19.569 19.375 19.5V10.8802C19.375 8.4535 17.2644 6.55499 14.8498 6.7745C14.1052 6.84219 13.369 7.02731 12.6815 7.32194L11.375 7.88186V6.5C11.375 6.43096 11.319 6.375 11.25 6.375H7.25Z" fill="white"/> </svg>', 'LinkedIn', '<a href="#">Olimob-cpa</a>')
+              +contactItem('<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4843 16.2902L17.485 16.2885L17.5024 16.245L20.5012 1.12592V1.07682C20.5012 0.700115 20.362 0.371256 20.0591 0.173996C19.794 0.00133431 19.4892 -0.0109622 19.2755 0.00525841C19.0495 0.0224132 18.8364 0.0788287 18.6888 0.125789C18.6129 0.149949 18.5494 0.173227 18.504 0.190834C18.4812 0.19967 18.4627 0.207169 18.4493 0.212755L18.4361 0.218313L1.71624 6.77725L1.71164 6.7789C1.70261 6.78219 1.69066 6.78664 1.67624 6.79225C1.64749 6.80345 1.60835 6.81947 1.56237 6.8403C1.47209 6.88122 1.34735 6.94436 1.22085 7.03099C1.00599 7.17812 0.596881 7.52645 0.665963 8.07867C0.723184 8.53608 1.03849 8.82658 1.25106 8.97698C1.365 9.05761 1.47402 9.11575 1.55385 9.15375C1.59429 9.17301 1.62865 9.18776 1.65424 9.19818C1.66707 9.2034 1.67779 9.20758 1.68609 9.21073L1.69672 9.21469L1.70351 9.21722L4.62875 10.202C4.61888 10.3856 4.63708 10.5727 4.68575 10.7573L6.15104 16.3157C6.32477 16.9748 6.921 17.4339 7.60257 17.4334C8.2135 17.4329 8.75533 17.0633 8.98551 16.5119L11.2732 14.0658L15.2022 17.0781L15.258 17.1025C15.615 17.2582 15.9485 17.3076 16.2534 17.2659C16.5579 17.2243 16.7999 17.0966 16.9817 16.9512C17.1605 16.8081 17.2831 16.6466 17.3602 16.525C17.3994 16.4633 17.4286 16.409 17.4488 16.3681C17.459 16.3476 17.467 16.3302 17.473 16.3167L17.4805 16.2993L17.4832 16.2928L17.4843 16.2902ZM6.13615 10.375C6.10285 10.2486 6.15513 10.1153 6.26542 10.0452L16.1874 3.74432C16.1874 3.74432 16.771 3.39002 16.7502 3.74432C16.7502 3.74432 16.8543 3.80689 16.5416 4.09861C16.245 4.37569 9.46992 10.9167 8.78438 11.5786C8.74481 11.6168 8.72119 11.6607 8.70724 11.7139L7.60144 15.9334L6.13615 10.375Z" fill="white"/> </svg>', 'Telegram Support', '<a href="#">@olimobsupport</a>')
+              +contactItem('<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M6.9767 1.24228C7.62516 1.08395 8.30278 1 9 1C13.6944 1 17.5 4.80558 17.5 9.5C17.5 10.1972 17.4161 10.8748 17.2577 11.5233C17.7269 12.2337 18 13.085 18 14C18 16.4853 15.9853 18.5 13.5 18.5C12.585 18.5 11.7337 18.2269 11.0233 17.7577C10.3748 17.9161 9.69723 18 9 18C4.30558 18 0.5 14.1944 0.5 9.5C0.5 8.80278 0.583946 8.12516 0.742284 7.4767C0.273118 6.76631 0 5.91505 0 5C0 2.51472 2.01472 0.5 4.5 0.5C5.41505 0.5 6.26631 0.773118 6.9767 1.24228ZM10.5042 8.77251C10.8776 8.88386 11.2335 9.04721 11.5614 9.25774C11.8964 9.47795 12.1756 9.77372 12.3772 10.1202C12.5859 10.504 12.6917 10.9353 12.6841 11.3722C12.7016 11.9356 12.5338 12.4893 12.2062 12.9481C11.8616 13.4191 11.3886 13.7808 10.8438 13.9898C10.2577 14.2237 9.63026 14.3365 8.99939 14.3212C8.25699 14.3421 7.52056 14.1829 6.85307 13.8572C6.41437 13.6263 6.03772 13.2932 5.75495 12.886C5.47201 12.4945 5.31348 12.0268 5.29999 11.544C5.29999 11.327 5.3862 11.1188 5.53965 10.9654C5.69311 10.8119 5.90124 10.7257 6.11826 10.7257C6.33528 10.7257 6.54341 10.8119 6.69687 10.9654C6.85032 11.1188 6.93653 11.327 6.93653 11.544C6.95334 11.6936 7.01047 11.8359 7.10182 11.9556C7.23197 12.1426 7.40474 12.2961 7.60588 12.4032C8.04135 12.6066 8.5191 12.7031 8.99939 12.6847C9.41471 12.6982 9.8285 12.6281 10.2162 12.4785C10.4762 12.385 10.704 12.2189 10.8724 11.9998C10.9971 11.8258 11.0589 11.6145 11.0475 11.4008C11.0561 11.2357 11.0229 11.071 10.951 10.9221C10.8766 10.8001 10.7749 10.697 10.6539 10.621C10.4599 10.4987 10.2498 10.4039 10.0296 10.3395C9.8504 10.2847 9.65483 10.2315 9.4519 10.1791L9.43717 10.1775C9.42809 10.1745 9.41543 10.1714 9.40416 10.1687C9.40019 10.1678 9.39639 10.1669 9.39298 10.166C9.26042 10.1325 9.12786 10.0989 8.9863 10.0678C8.62463 9.9901 8.37424 9.92709 8.21713 9.87963C8.21357 9.87874 8.2105 9.87665 8.20739 9.87453C8.20477 9.87274 8.20212 9.87093 8.19913 9.86981C7.8358 9.78173 7.47856 9.67021 7.12964 9.53596C6.66788 9.35073 6.26234 9.04841 5.95297 8.65877C5.63251 8.23824 5.4651 7.72097 5.47837 7.19243C5.47848 6.66152 5.65203 6.14518 5.97261 5.72199C6.30731 5.29639 6.75424 4.97274 7.26302 4.78752C7.8256 4.58534 8.42055 4.48827 9.01821 4.50113C9.48839 4.49593 9.9567 4.56102 10.4076 4.69424C10.7983 4.80815 11.1643 4.99379 11.4869 5.24167C11.7662 5.45362 11.9993 5.72037 12.1718 6.02557C12.2236 6.12025 12.2562 6.22423 12.2676 6.33154C12.279 6.43884 12.2691 6.54735 12.2384 6.65081C12.2077 6.75427 12.1569 6.85064 12.0888 6.93437C12.0208 7.01811 11.9368 7.08755 11.8418 7.1387C11.7468 7.18985 11.6426 7.2217 11.5352 7.23242C11.4278 7.24314 11.3194 7.23251 11.2161 7.20115C11.1129 7.16979 11.0168 7.11832 10.9335 7.04969C10.8503 6.98107 10.7814 6.89665 10.7309 6.80129C10.6611 6.69149 10.5708 6.59619 10.4649 6.52062C10.3012 6.40125 10.1175 6.31202 9.92241 6.25714C9.62829 6.17286 9.32331 6.1326 9.0174 6.13767C8.62206 6.12602 8.22786 6.18589 7.85381 6.31442C7.63143 6.39017 7.43357 6.52444 7.28102 6.7031C7.17204 6.84259 7.11298 7.01459 7.11328 7.19161C7.0999 7.3567 7.14637 7.52109 7.2442 7.65475C7.37788 7.81809 7.55152 7.94409 7.74826 8.02052C8.12999 8.16751 8.52294 8.28353 8.9233 8.36746C9.25879 8.44111 9.53045 8.50657 9.75957 8.57039C10.0214 8.63504 10.2751 8.70296 10.5042 8.77251Z" fill="white"/> </svg>', 'Skype', '<a href="#">Olimob</a>')
+          
+        .team
+          .team__wrap
+            .team__title.h2 Our Managers
+            .team__list.row
+              .team__item
+                .team__img
+                  img(src="uploads/eugene.png" alt="")
+                .team__data
+                  .team__name Eugene
+                  .team__desc Gambling
+                  .team__contact
+                    p @EvginSpb
+                    p Skype
+              .team__item
+                .team__img
+                  img(src="uploads/alice.png" alt="")
+                .team__data
+                  .team__name Alice
+                  .team__desc Dating
+                  .team__contact
+                    p @alisa_litvinko
+                    p Skype
+              .team__item
+                .team__img
+                  img(src="uploads/artem.png" alt="")
+                .team__data
+                  .team__name Artem
+                  .team__desc Crypto
+                  .team__contact
+                    p @artem_olimob
+                    p Skype
+              .team__item
+                .team__img
+                  img(src="uploads/tim.png" alt="")
+                .team__data
+                  .team__name Tim
+                  .team__desc Mobile content
+                  .team__contact
+                    p @PubOlimob
+                    p Skype
 
   .alert
     .case
       .alert__wrap.row
-        .alert__title Sign up and dedicated manager will reach you directly 
+        .alert__title.h3 Sign up and dedicated manager will reach you directly 
         a.alert__btn.btn.--md.--bg-white(href="") Sign Up

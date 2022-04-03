@@ -10,9 +10,9 @@ html, body {
 }
 
 body {
-  color: #000000;
-  font-size: 16px;
-  font-family: "Tahoma", sans-serif;
+  color: #333;
+  font-size: 20px;
+  font-family: "Circe", sans-serif;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -37,7 +37,7 @@ li {
 }
 
 a {
-  color: #000000;
+  color: #333;
   text-decoration: none;
   outline: none;
   transition: 0.3s;
@@ -73,6 +73,7 @@ img {
   display: block;
   max-width: 100% !important;
   max-height: 100% !important;
+  pointer-events: none;
 }
 
 svg {
@@ -86,4 +87,5 @@ img, svg, path, circle, rect, line {
 .wrap {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }

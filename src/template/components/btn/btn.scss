@@ -1,0 +1,85 @@
+@import '../../scss/vars';
+
+.btn {
+	z-index: 1;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	cursor: pointer;
+	font-size: $fzMain;
+  font-family: $ff2;
+	// overflow: hidden;
+	border: none;
+	background-color: transparent;
+	transition: .3s;
+	outline: none;
+	border-bottom: none;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &:before {
+    z-index: -1;
+    border-radius: 50px;
+  }
+  &.--bg-white {
+    border-radius: 50px;
+    &:before {
+      animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
+      box-shadow: 0 0 0 0 white;
+      background: #fff;
+    }
+  }
+  &.--bg-violet {
+    color: #fff;
+    border-radius: 50px;
+    &:before {
+      transition: .3s;
+      background-size: 400% 400%;
+      animation: gradient 3s ease-in-out infinite;
+      background-image: linear-gradient(120deg, #8E3AD6, #A189FF, #8E3AD6);
+      // background-image: linear-gradient(160.67deg, #8E3AD6 9.89%, #A189FF 84.06%)
+    }
+  }
+  &.--sm {
+    height: 48px;
+    font-size: 18px;
+    font-weight: 800;
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+  &.--md {
+    height: 60px;
+    font-size: 18px;
+    font-weight: 800;
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 18px rgba(255, 255, 255, 0); 
+  }
+}

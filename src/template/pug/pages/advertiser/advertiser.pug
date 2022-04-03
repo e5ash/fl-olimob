@@ -1,107 +1,122 @@
 extends ../../templates/default
 block vars
   -
-    title = ""
-    breadcrumbs = [
-      ['Главная', 'index.html'],
-      [title]
-    ]
+    title = "Advertiser"
 block content
-  .advertiser
+  .first
     .case
-      .advertiser__wrap.row
-        .advertiser__img
-          img(src="" alt="")
-        .advertiser__content
-          .advertiser__title Advertisers
-          .advertiser__subtitle Grow your business with Olimob
-          .advertiser__desc Personal solutions for each partner
-          a.advertiser__btn.btn.--md.--bg-violet(href="") Get started
+      .first__wrap.row
+        .first__img
+          img(src="uploads/first-a.png" alt="")
+        .first__content
+          .first__title.h2 Advertisers
+          .first__subtitle Grow your business with Olimob
+          .first__desc Personal solutions for each partner
+          a.first__btn.btn.--md.--bg-violet(href="") Get started
 
-    .advertiser__figures
-      .advertiser__figure
-      .advertiser__figure
-      .advertiser__figure
+    .first__figures
+      .first__figure.figure
+        img(src="uploads/advertiser-figure-1.png" alt="")
+      .first__figure.figure
+        img(src="uploads/advertiser-figure-2.png" alt="")
+      .first__figure.figure
+        img(src="uploads/advertiser-figure-3.png" alt="")
+      .first__figure.figure
+        img(src="uploads/advertiser-figure-4.png" alt="")
 
 
   .alert
     .case
       .alert__wrap.row
-        .alert__title Direct advertiser with own services, products and apps. <br>5+ years of success with multiple verticals.
+        .alert__title.h3.tac Direct advertiser with own services, products and apps. <br>5+ years of success with multiple verticals.
       
   .about
     .case
-      .about__title Today Olimob is
+      .about__title.h2 Today Olimob is
       .about__list.row
         .about__item
           .about__icon
-            img(src="" alt="")
+            img(src="uploads/cpa-violet.svg" alt="")
+            <svg width="134" height="150" viewBox="0 0 134 150" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M67.0107 0C64.881 0 62.7728 0.534416 60.8798 1.62463L6.131 33.0483C2.34484 35.2074 0 39.2475 0 43.6084V106.413C0 110.774 2.34484 114.793 6.131 116.973L60.8798 148.375C62.7728 149.466 64.9025 150 67.0107 150C69.1405 150 71.2487 149.466 73.1418 148.375L127.869 116.973C131.677 114.793 134 110.774 134 106.413V43.6084C134 39.2475 131.655 35.2287 127.869 33.0483L73.1418 1.62463C71.2487 0.534416 69.1405 0 67.0107 0Z" fill="#F2F3F5"/> </svg>
           .about__text CPA network
         .about__item
           .about__icon
-            img(src="" alt="")
+            img(src="uploads/mediabuying-violet.svg" alt="")
+            <svg width="134" height="150" viewBox="0 0 134 150" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M67.0107 0C64.881 0 62.7728 0.534416 60.8798 1.62463L6.131 33.0483C2.34484 35.2074 0 39.2475 0 43.6084V106.413C0 110.774 2.34484 114.793 6.131 116.973L60.8798 148.375C62.7728 149.466 64.9025 150 67.0107 150C69.1405 150 71.2487 149.466 73.1418 148.375L127.869 116.973C131.677 114.793 134 110.774 134 106.413V43.6084C134 39.2475 131.655 35.2287 127.869 33.0483L73.1418 1.62463C71.2487 0.534416 69.1405 0 67.0107 0Z" fill="#F2F3F5"/> </svg>
           .about__text Media-buying <br>team
         .about__item
           .about__icon
-            img(src="" alt="")
+            img(src="uploads/digitalagency-violet.svg" alt="")
+            <svg width="134" height="150" viewBox="0 0 134 150" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M67.0107 0C64.881 0 62.7728 0.534416 60.8798 1.62463L6.131 33.0483C2.34484 35.2074 0 39.2475 0 43.6084V106.413C0 110.774 2.34484 114.793 6.131 116.973L60.8798 148.375C62.7728 149.466 64.9025 150 67.0107 150C69.1405 150 71.2487 149.466 73.1418 148.375L127.869 116.973C131.677 114.793 134 110.774 134 106.413V43.6084C134 39.2475 131.655 35.2287 127.869 33.0483L73.1418 1.62463C71.2487 0.534416 69.1405 0 67.0107 0Z" fill="#F2F3F5"/> </svg>
           .about__text Digital agency
         .about__item
           .about__icon
-            img(src="" alt="")
+            img(src="uploads/cases-violet.svg" alt="")
+            <svg width="134" height="150" viewBox="0 0 134 150" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M67.0107 0C64.881 0 62.7728 0.534416 60.8798 1.62463L6.131 33.0483C2.34484 35.2074 0 39.2475 0 43.6084V106.413C0 110.774 2.34484 114.793 6.131 116.973L60.8798 148.375C62.7728 149.466 64.9025 150 67.0107 150C69.1405 150 71.2487 149.466 73.1418 148.375L127.869 116.973C131.677 114.793 134 110.774 134 106.413V43.6084C134 39.2475 131.655 35.2287 127.869 33.0483L73.1418 1.62463C71.2487 0.534416 69.1405 0 67.0107 0Z" fill="#F2F3F5"/> </svg>
           .about__text Over 200 successful projects with our partners
 
-  .provide
+  .provide.bg-dynamic
     .case
-      .provide__title We provide:
-      .provide__list
-        .provide__item
-          .provide__elems
-            .provide__elem
-              .provide__elem-icon
-                img(src="" alt="")
-              .provide__elem-text Personal manager
-            .provide__elem
-              .provide__elem-icon
-                img(src="" alt="")
-              .provide__elem-text Anti-fraud system
-            .provide__elem
-              .provide__elem-icon
-                img(src="" alt="")
-              .provide__elem-text Stable platform
-            .provide__elem
-              .provide__elem-icon
-                img(src="" alt="")
-              .provide__elem-text Innovative promotion tools
-        .provide__item
-          .provide__elems
-            .provide__elem
-              .provide__elem-icon
-                img(src="" alt="")
-              .provide__elem-text HQ Traffic from direct publishers
-            .provide__elem
-              .provide__elem-icon
-                img(src="" alt="")
-              .provide__elem-text Fast integration
-            .provide__elem
-              .provide__elem-icon
-                img(src="" alt="")
-              .provide__elem-text Dedicated media buying team
-            .provide__elem
-              .provide__elem-icon
-                img(src="" alt="")
-              .provide__elem-text CPA, CPL, CPS Models
+      .provide__title.h2 We provide:
+      .provide__wrap
+        .provide__figure
+          img(src="uploads/provide-figure.png" alt="")
+
+        .provide__list
+          .provide__item
+            .provide__bg
+              <svg width="714" height="772" viewBox="0 0 714 772" fill="none" xmlns="http://www.w3.org/2000/svg"> <g filter="url(#filter0_d_708_1311)"> <path d="M333.535 131.296C348.055 122.901 365.945 122.901 380.465 131.296L565.535 238.298C580.055 246.693 589 262.208 589 278.998V493.002C589 509.792 580.055 525.307 565.535 533.702L380.465 640.704C365.945 649.099 348.055 649.099 333.535 640.704L148.465 533.702C133.945 525.307 125 509.792 125 493.002V278.998C125 262.208 133.945 246.693 148.465 238.298L333.535 131.296Z" fill="url(#paint0_radial_708_1311)"/> <path d="M334.036 132.162C348.246 123.946 365.754 123.946 379.964 132.162L565.035 239.164C579.245 247.38 588 262.565 588 278.998V493.002C588 509.435 579.245 524.62 565.035 532.836L379.964 639.838C365.754 648.054 348.246 648.054 334.036 639.838L148.965 532.836C134.755 524.62 126 509.435 126 493.002V278.998C126 262.565 134.755 247.38 148.965 239.164L334.036 132.162Z" stroke="#834DDB" stroke-width="2"/> </g> <defs> <filter id="filter0_d_708_1311" x="0" y="0" width="714" height="772" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/> <feOffset/> <feGaussianBlur stdDeviation="62.5"/> <feComposite in2="hardAlpha" operator="out"/> <feColorMatrix type="matrix" values="0 0 0 0 0.120833 0 0 0 0 0.120833 0 0 0 0 0.120833 0 0 0 1 0"/> <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_708_1311"/> <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_708_1311" result="shape"/> </filter> <radialGradient id="paint0_radial_708_1311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(357 386) rotate(90) scale(261 232)"> <stop stop-color="#333333"/> <stop offset="1" stop-color="#3E3453"/> </radialGradient> </defs> </svg>
+            .provide__elems
+              .provide__elems-list
+                .provide__elem
+                  .provide__elem-icon
+                    img(src="uploads/chat-alt-2-violet.svg" alt="")
+                  .provide__elem-text Personal manager
+                .provide__elem
+                  .provide__elem-icon
+                    img(src="uploads/shield-check-violet.svg" alt="")
+                  .provide__elem-text Anti-fraud system
+                .provide__elem
+                  .provide__elem-icon
+                    img(src="uploads/thumb-up-violet.svg" alt="")
+                  .provide__elem-text Stable platform
+                .provide__elem
+                  .provide__elem-icon
+                    img(src="uploads/fire-violet.svg" alt="")
+                  .provide__elem-text Innovative promotion tools
+          .provide__item
+            .provide__bg
+              <svg width="714" height="772" viewBox="0 0 714 772" fill="none" xmlns="http://www.w3.org/2000/svg"> <g filter="url(#filter0_d_708_1296)"> <path d="M333.535 131.296C348.055 122.901 365.945 122.901 380.465 131.296L565.535 238.298C580.055 246.693 589 262.208 589 278.998V493.002C589 509.792 580.055 525.307 565.535 533.702L380.465 640.704C365.945 649.099 348.055 649.099 333.535 640.704L148.465 533.702C133.945 525.307 125 509.792 125 493.002V278.998C125 262.208 133.945 246.693 148.465 238.298L333.535 131.296Z" fill="url(#paint0_radial_708_1296)"/> <path d="M334.036 132.162C348.246 123.946 365.754 123.946 379.964 132.162L565.035 239.164C579.245 247.38 588 262.565 588 278.998V493.002C588 509.435 579.245 524.62 565.035 532.836L379.964 639.838C365.754 648.054 348.246 648.054 334.036 639.838L148.965 532.836C134.755 524.62 126 509.435 126 493.002V278.998C126 262.565 134.755 247.38 148.965 239.164L334.036 132.162Z" stroke="#834DDB" stroke-width="2"/> </g> <defs> <filter id="filter0_d_708_1296" x="0" y="0" width="714" height="772" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/> <feOffset/> <feGaussianBlur stdDeviation="62.5"/> <feComposite in2="hardAlpha" operator="out"/> <feColorMatrix type="matrix" values="0 0 0 0 0.120833 0 0 0 0 0.120833 0 0 0 0 0.120833 0 0 0 1 0"/> <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_708_1296"/> <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_708_1296" result="shape"/> </filter> <radialGradient id="paint0_radial_708_1296" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(357 386) rotate(90) scale(261 232)"> <stop stop-color="#333333"/> <stop offset="1" stop-color="#3E3453"/> </radialGradient> </defs> </svg>
+            .provide__elems
+              .provide__elems-list.--margin-more
+                .provide__elem
+                  .provide__elem-icon
+                    img(src="uploads/earth-violet.svg" alt="")
+                  .provide__elem-text HQ Traffic from direct publishers
+                .provide__elem
+                  .provide__elem-icon
+                    img(src="uploads/settings-violet.svg" alt="")
+                  .provide__elem-text Fast integration
+                .provide__elem
+                  .provide__elem-icon
+                    img(src="uploads/people-violet.svg" alt="")
+                  .provide__elem-text Dedicated media buying team
+                .provide__elem
+                  .provide__elem-icon
+                    img(src="uploads/pocket-violet.svg" alt="")
+                  .provide__elem-text CPA, CPL, CPS Models
 
 
   .alert
     .case
       .alert__wrap.row
-        .alert__title Would you like to get 24/4 dedicated manager
+        .alert__title.h3 Would you like to get 24/4 dedicated manager
         a.alert__btn.btn.--md.--bg-white(href="") Fill the Form
 
-  .counts
+  .counts.bg-dynamic
     .case
       .counts__wrap
-        .counts__title #[u Olimob] in numbers
+        .counts__title.h2 #[u Olimob] in numbers
         .counts__list
           .counts__item
             .counts__value 1500
@@ -115,43 +130,76 @@ block content
           .counts__item
             .counts__value 2 000 000
             .counts__desc Monthly conversions
+    .counts__figures
+      .counts__figure.figure
+        img(src="uploads/counts-figure-1.png" alt="")
+      .counts__figure.figure
+        img(src="uploads/counts-figure-2.png" alt="")
+      .counts__figure.figure
+        img(src="uploads/counts-figure-3.png" alt="")
+      .counts__figure.figure
+        img(src="uploads/counts-figure-4.png" alt="")
 
   .inventory
     .case
-      .inventory__title Our inventory
-      .inventory__subtitle We supply any type of traffic
+      .inventory__title.h2 Our inventory
+      .inventory__subtitle.h3 We supply any type of traffic
       .inventory__list.row
         .inventory__item
           .inventory__icon
-            img(src="" alt="")
+            u
+              img(src="uploads/google.svg" alt="")
+            i
+              <svg width="134" height="150" viewBox="0 0 134 150" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M67.0107 0C64.881 0 62.7728 0.534416 60.8798 1.62463L6.131 33.0483C2.34484 35.2074 0 39.2475 0 43.6084V106.413C0 110.774 2.34484 114.793 6.131 116.973L60.8798 148.375C62.7728 149.466 64.9025 150 67.0107 150C69.1405 150 71.2487 149.466 73.1418 148.375L127.869 116.973C131.677 114.793 134 110.774 134 106.413V43.6084C134 39.2475 131.655 35.2287 127.869 33.0483L73.1418 1.62463C71.2487 0.534416 69.1405 0 67.0107 0Z" fill="#964DDF"/> </svg>
           .inventory__text Google Ads
         .inventory__item
           .inventory__icon
-            img(src="" alt="")
+            u
+              img(src="uploads/facebook.svg" alt="")
+            i
+              <svg width="134" height="150" viewBox="0 0 134 150" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M67.0107 0C64.881 0 62.7728 0.534416 60.8798 1.62463L6.131 33.0483C2.34484 35.2074 0 39.2475 0 43.6084V106.413C0 110.774 2.34484 114.793 6.131 116.973L60.8798 148.375C62.7728 149.466 64.9025 150 67.0107 150C69.1405 150 71.2487 149.466 73.1418 148.375L127.869 116.973C131.677 114.793 134 110.774 134 106.413V43.6084C134 39.2475 131.655 35.2287 127.869 33.0483L73.1418 1.62463C71.2487 0.534416 69.1405 0 67.0107 0Z" fill="#964DDF"/> </svg>
           .inventory__text Facebook
         .inventory__item
           .inventory__icon
-            img(src="" alt="")
+            u
+              img(src="uploads/tiktok.svg" alt="")
+            i
+              <svg width="134" height="150" viewBox="0 0 134 150" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M67.0107 0C64.881 0 62.7728 0.534416 60.8798 1.62463L6.131 33.0483C2.34484 35.2074 0 39.2475 0 43.6084V106.413C0 110.774 2.34484 114.793 6.131 116.973L60.8798 148.375C62.7728 149.466 64.9025 150 67.0107 150C69.1405 150 71.2487 149.466 73.1418 148.375L127.869 116.973C131.677 114.793 134 110.774 134 106.413V43.6084C134 39.2475 131.655 35.2287 127.869 33.0483L73.1418 1.62463C71.2487 0.534416 69.1405 0 67.0107 0Z" fill="#964DDF"/> </svg>
           .inventory__text TikTok
         .inventory__item
           .inventory__icon
-            img(src="" alt="")
+            u
+              img(src="uploads/share.svg" alt="")
+            i
+              <svg width="134" height="150" viewBox="0 0 134 150" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M67.0107 0C64.881 0 62.7728 0.534416 60.8798 1.62463L6.131 33.0483C2.34484 35.2074 0 39.2475 0 43.6084V106.413C0 110.774 2.34484 114.793 6.131 116.973L60.8798 148.375C62.7728 149.466 64.9025 150 67.0107 150C69.1405 150 71.2487 149.466 73.1418 148.375L127.869 116.973C131.677 114.793 134 110.774 134 106.413V43.6084C134 39.2475 131.655 35.2287 127.869 33.0483L73.1418 1.62463C71.2487 0.534416 69.1405 0 67.0107 0Z" fill="#964DDF"/> </svg>
           .inventory__text Social media
         .inventory__item
           .inventory__icon
-            img(src="" alt="")
+            u
+              img(src="uploads/dsp.svg" alt="")
+            i
+              <svg width="134" height="150" viewBox="0 0 134 150" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M67.0107 0C64.881 0 62.7728 0.534416 60.8798 1.62463L6.131 33.0483C2.34484 35.2074 0 39.2475 0 43.6084V106.413C0 110.774 2.34484 114.793 6.131 116.973L60.8798 148.375C62.7728 149.466 64.9025 150 67.0107 150C69.1405 150 71.2487 149.466 73.1418 148.375L127.869 116.973C131.677 114.793 134 110.774 134 106.413V43.6084C134 39.2475 131.655 35.2287 127.869 33.0483L73.1418 1.62463C71.2487 0.534416 69.1405 0 67.0107 0Z" fill="#964DDF"/> </svg>
           .inventory__text DSP
         .inventory__item
           .inventory__icon
-            img(src="" alt="")
+            u
+              img(src="uploads/apps.svg" alt="")
+            i
+              <svg width="134" height="150" viewBox="0 0 134 150" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M67.0107 0C64.881 0 62.7728 0.534416 60.8798 1.62463L6.131 33.0483C2.34484 35.2074 0 39.2475 0 43.6084V106.413C0 110.774 2.34484 114.793 6.131 116.973L60.8798 148.375C62.7728 149.466 64.9025 150 67.0107 150C69.1405 150 71.2487 149.466 73.1418 148.375L127.869 116.973C131.677 114.793 134 110.774 134 106.413V43.6084C134 39.2475 131.655 35.2287 127.869 33.0483L73.1418 1.62463C71.2487 0.534416 69.1405 0 67.0107 0Z" fill="#964DDF"/> </svg>
           .inventory__text Our own apps
         .inventory__item
           .inventory__icon
-            img(src="" alt="")
+            u
+              img(src="uploads/in-app.svg" alt="")
+            i
+              <svg width="134" height="150" viewBox="0 0 134 150" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M67.0107 0C64.881 0 62.7728 0.534416 60.8798 1.62463L6.131 33.0483C2.34484 35.2074 0 39.2475 0 43.6084V106.413C0 110.774 2.34484 114.793 6.131 116.973L60.8798 148.375C62.7728 149.466 64.9025 150 67.0107 150C69.1405 150 71.2487 149.466 73.1418 148.375L127.869 116.973C131.677 114.793 134 110.774 134 106.413V43.6084C134 39.2475 131.655 35.2287 127.869 33.0483L73.1418 1.62463C71.2487 0.534416 69.1405 0 67.0107 0Z" fill="#964DDF"/> </svg>
           .inventory__text In-app
         .inventory__item
           .inventory__icon
-            img(src="" alt="")
+            u
+              img(src="uploads/partners.svg" alt="")
+            i
+              <svg width="134" height="150" viewBox="0 0 134 150" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M67.0107 0C64.881 0 62.7728 0.534416 60.8798 1.62463L6.131 33.0483C2.34484 35.2074 0 39.2475 0 43.6084V106.413C0 110.774 2.34484 114.793 6.131 116.973L60.8798 148.375C62.7728 149.466 64.9025 150 67.0107 150C69.1405 150 71.2487 149.466 73.1418 148.375L127.869 116.973C131.677 114.793 134 110.774 134 106.413V43.6084C134 39.2475 131.655 35.2287 127.869 33.0483L73.1418 1.62463C71.2487 0.534416 69.1405 0 67.0107 0Z" fill="#964DDF"/> </svg>
           .inventory__text Direct publishers
 
       .inventory__figures
