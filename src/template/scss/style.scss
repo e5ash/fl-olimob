@@ -1421,6 +1421,12 @@ u {
       padding-right: 0;
     }
   }
+
+  .platform {
+    &__elem {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1494,6 +1500,44 @@ u {
       + .alert__btn {
         margin-left: 40px;
       }
+    }
+  }
+
+  .platform {
+    padding-top: 80px;
+    &__item {
+      flex-direction: column;
+    }
+    &__text {
+      order: 1;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    &__content {
+      width: 100%;
+    }
+    &__title br {
+      display: none;
+    }
+    &__desc {
+      margin-top: 20px;
+    }
+    &__elems {
+      order: 2;
+      width: 100%;
+      height: auto;
+      justify-content: flex-start;  
+    }
+    &__elems-list {
+      margin: 0;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &__elem {
+      margin: 0 0 16px 0;
+    }
+    &__elem:last-of-type {
+      margin-bottom: 0;
     }
   }
     
