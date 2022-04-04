@@ -3,41 +3,30 @@ var html = document.querySelector('html'),
 		wrap = document.querySelector('.wrap');
 
 document.addEventListener('DOMContentLoaded', ()=>{
-	// Fields
-	let fields = document.querySelectorAll('.field');
-	 
-	if (fields) {
-		fields.forEach((field)=>{
-			new Field(field);
-		});
-	}
+  const headerWrap = document.querySelector('.header__wrap'),
+        ham = document.querySelector('.header__ham');
+
+  ham.addEventListener('click', ()=>{
+    toggleNav();
+  });
+  function toggleNav() {
+    html.classList.toggle('overflow-disabled');
+    body.classList.toggle('overflow-disabled');
+    headerWrap.classList.toggle('--show');
+    ham.classList.toggle('--close');
+  }
 
 
-	// Checks
-	let checks = document.querySelectorAll('.check');
-	 
-	if (checks) {
-		checks.forEach((check)=>{
-			new Check(check);
-		});
-	}
-
-
-	// Selects
-	var selects = document.querySelectorAll('.select');
-	if (selects) {
-			selects.forEach(select => {
-		  new Select(select);
-		});
-
-		document.addEventListener('click', (event)=>{
-			let openSelects = document.querySelectorAll('.select.--open');
-			if (!event.target.closest('.select') && openSelects) {
-				openSelects.forEach((select)=> {
-					select.classList.remove(Select.classOpen);
-				});
-			}
-		})
-	}
-
+  const navLinks = document.querySelectorAll('.header__nav a');
+  if (navLinks) {
+    navLinks.forEach((link)=>{
+      link.addEventListener('click', (event)=>{
+        html.classList.remove('overflow-disabled');
+        body.classList.remove('overflow-disabled');
+        headerWrap.classList.remove('--show');
+        ham.classList.remove('--close');
+      })
+    });
+  }
 });
+
